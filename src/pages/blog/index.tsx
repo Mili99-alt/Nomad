@@ -16,6 +16,7 @@ import getBlogIndex from '../../lib/notion/getBlogIndex'
 export async function getStaticProps({ preview }) {
   const postsTable = await getBlogIndex()
   const postsTable1 = await getBlogIndex()
+  const postsTable2 = await getBlogIndex()
 
   const authorsToGet: Set<string> = new Set()
   const posts: any[] = Object.keys(postsTable)
